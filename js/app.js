@@ -48,3 +48,5 @@ function renderList() {
         liElement.classList.remove('bought')
     })
 }
+
+// hei
