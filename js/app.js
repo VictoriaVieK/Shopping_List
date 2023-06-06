@@ -23,6 +23,14 @@ inputElement.addEventListener('keyup', (event) =>{
     }
 })
 
+// Retrieve items from local storage
+const storedItems = JSON.parse(localStorage.getItem('groceryList')) || []
+
+// Render stored items on page load
+storedItems.forEach((item) => {
+    const liElement = createListItem(item.text, item.bought)
+    list.appendChild(liElement)
+})
 
 // Function som legger noe til listen. Function som fjerner noe med knapp.
 
@@ -39,7 +47,7 @@ function renderList() {
         liElement.parentNode.removeChild(liElement)
     })
 
-// Når man trykker så kommer eller forsvinner opacity.
+// Når man trykker så kommer eller forsvinner.
 
     liElement.addEventListener('click', () => {
         liElement.classList.add('bought')
@@ -48,9 +56,4 @@ function renderList() {
     liElement.addEventListener('dblclick', () => {
         liElement.classList.remove('bought')
     })
-}
-
-// Local storage.
-function updateLocalStorage() {
-    localStorage.setItem('groceryList', JSON.stringify(storedItems))
 }
