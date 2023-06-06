@@ -1,5 +1,6 @@
+
 // Get header:
-const header = document.getElementsByClassName('header')
+const header = document.getElementsByTagName('header')
 
 // Get input element
 const inputElement = document.getElementById('user_input')
@@ -47,4 +48,9 @@ function renderList() {
     liElement.addEventListener('dblclick', () => {
         liElement.classList.remove('bought')
     })
+}
+
+// Local storage.
+function updateLocalStorage() {
+    localStorage.setItem('groceryList', JSON.stringify(storedItems))
 }
