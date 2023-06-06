@@ -39,7 +39,7 @@ function renderList() {
         liElement.parentNode.removeChild(liElement)
     })
 
-// Når man trykker så kommer eller forsvinner line-through.
+// Når man trykker så kommer eller forsvinner opacity.
 
     liElement.addEventListener('click', () => {
         liElement.classList.add('bought')
