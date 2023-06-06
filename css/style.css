@@ -1,45 +1,58 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Raleway:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap');
 
 html {
-    font-family: 'Raleway', sans-serif;
-    background-color: #e8ddd7;
-    font-size: 1.1rem;
-    color: #272727;
+    font-family: 'Archivo Black', sans-serif;
+    background-color: #ede6d8;
+    font-size: 1.2rem;
+    color: #044c3e;
 }
 
 main {
-    max-width: 36rem;
+    max-width: 30rem;
+    align-items: center;
     width: 100%;
-    margin: 0 auto;
+    margin: 2.5rem auto;
+    padding: 1rem;
+    border: 0.7rem solid #044c3e;
+    border-radius: 1rem;
+    background-color: #eeacb7;
 }
 
 h1{
+    font-family: 'Archivo Black', sans-serif;
     text-align: center;
-    font-size: 3rem;
-    margin: 3.5rem;
-    margin-top: 5rem;
+    font-size: 2.5rem;
+    margin: 2rem;
 }
 
-.input_button{
+.input{
     display: flex;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin: 3rem;
 }
 
 #user_input {
-    width: 20%;
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 1.2rem;
+    width: 50%;
+    padding: 0.02rem 0.5rem;
     border: 0;
-    border-bottom: 0.15rem solid black;
-    margin-right: 1rem;    
-    background-color: #e8ddd7;
+    border-bottom: 0.3rem solid #044c3e;
+    margin-right: 2rem;    
+    background-color: #eeacb7;
+    color: #044c3e;
 }
 
 #add_button {
-    border: 0.12rem solid black;
-    padding: 0.2rem;
+    font-family: 'Archivo Black', sans-serif;
+    border: 0.3rem solid #044c3e;
+    height: 2.5rem;
+    width: 2.5rem;
     border-radius: 0.5rem;
-    background-color: #fff6f1;
+    background-color: #eeacb7;
+    color: #044c3e;
 }
 
 #items_list{
@@ -53,18 +66,21 @@ h1{
 
 li {
     width: 100%;
-    margin: 0.7rem;
+    margin-bottom: 2rem;
     display: flex;
     justify-content: space-between;
 }
 
 li button {
-    border: 0.12rem solid black;
-    padding: 0.2rem;
+    font-family: 'Archivo Black', sans-serif;
+    border: 0.3rem solid #044c3e;
+    height: 2rem;
+    width: 2rem;
     border-radius: 0.5rem;
-    background-color: #fff6f1;
+    background-color: #eeacb7;
+    color: #044c3e;
 }
 
 .bought {
-    opacity: 0.25;
+    opacity: 0.5;
 }
